@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 
 <body >
@@ -51,7 +52,7 @@
         </div>
     </section>
 
-    <section class="projects" id="projects" style="padding: 20px; background-color: #D2D3D5; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #292458; display: flex; flex-direction: column; align-items: center;">
+    <section class="projects" id="projects" style="padding: 20px; background-color: #292458; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #D2D3D5; display: flex; flex-direction: column; align-items: center;">
         <h2 class="text-2xl font-bold">My Projects</h2>
         <p>Here are some of the projects I've worked on:</p>
         <div id="graphic-designs">
@@ -102,11 +103,7 @@
                 </div>
                 <button class="carousel-control prev">❮</button>
                 <button class="carousel-control next">❯</button>
-                <div class="carousel-indicators">
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <div class="carousel-indicators"></div>
             </div>
 
             </div>
@@ -153,7 +150,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section" style="padding: 20px; background-color: #D2D3D5; color: #292458; display: flex; flex-direction: column; align-items: center;">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out!</p>
         <ul>
@@ -163,7 +160,7 @@
         </ul>
     </section>
 
-    <footer>
+    <footer class="footer" style="text-align: center; padding: 20px; background-color: #292458; color: #D2D3D5; border-top: 1px solid #dee2e6; margin-top: 20px;">
         <p>Designed by Uchechukwu Henry Udefi &copy; 2025</p>
     </footer>
 </body>
