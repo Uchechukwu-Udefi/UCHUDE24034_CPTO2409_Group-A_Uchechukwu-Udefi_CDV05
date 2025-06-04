@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
+<body >
+    <header class="header" style="text-align: center; padding: 20px; background-color: #D2D3D5; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #292458; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: space-between;">
         <img src="assets\logo-1.png" alt="Profile logo" style="width: 50px; height: 50px; border-radius: 50%;">
-        <h1>UCHECHUKWU HENRY UDEFI</h1>
-        <p>Designer & Frontend Developer</p>
+        <div>
+            <h1 class="text-2xl font-bold">UCHECHUKWU HENRY UDEFI</h1>
+            <p class="text-lg">Designer & Frontend Developer</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="section/about.html">About Me</a></li>
@@ -22,17 +24,23 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Designer & Frontend Developer</h1>
-        <p>With a strong foundation in graphic design and a passion for web development, I bring creativity and technical skills to every project.</p>
-        <p>Explore my work and let's connect!</p>
+    <main class="hero-section">
+        <img src="assets\UC2.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display:flex; float: left; align-items: center; justify-content: center;">
+        <div>
+            <h1 class="text-2xl font-bold">Designer & Frontend Developer</h1>
+            <p>With a strong foundation in graphic design and a passion for web development, I bring creativity and technical skills to every project.</p>
+            <p>Explore my work and let's connect!</p>
+        </div>  
     </main>
 
-    <section id="about">
+    <section id="about" class="about-section" style="text-align: center; padding: 20px; background-color: #292458; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #F8F9FA;">
+        <h1>About Me</h1>
         <h2>Who I Am</h2>
         <img src="assets\UC2.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;">
-        <p>Hi, I'm Uchechukwu Henry Udefi, a frontend developer and designer with a passion for creating beautiful and functional web applications.</p>
-        <p>Over the past years, I’ve worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I’ve built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.</p>
+        <div>
+            <p>Hi, I'm Uchechukwu Henry Udefi, a frontend developer and designer with a passion for creating beautiful and functional web applications.</p>
+            <p>Over the past years, I’ve worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I’ve built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.</p>
+        </div>
         <div>
             <button><a href="#graphic-designs">Designer</a></button>
             <button><a href="#web-app-development">Developer</a></button>
