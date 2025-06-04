@@ -48,3 +48,19 @@ prevBtn.addEventListener('click', () => {
   prevSlide();
   resetAutoSlide();
 });
+
+
+// Auto slide
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+// Initialize
+showSlide(currentIndex);
+startAutoSlide();
+
