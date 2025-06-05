@@ -63,3 +63,33 @@ function resetAutoSlide() {
 // Initialize
 showSlide(currentIndex);
 startAutoSlide();
+
+// Project card toggle functionality
+document.querySelectorAll('.card-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const card = header.closest('.project-card');
+    const cardNumber = card.getAttribute('data-card');
+    const details = document.getElementById(`details-${cardNumber}`);
+    const icon = header.querySelector('.toggle-icon');
+
+    const isActive = details.classList.contains('active');
+
+    // Close all first
+    document.querySelectorAll('.card-details').forEach(detail => detail.classList.remove('active'));
+    document.querySelectorAll('.toggle-icon').forEach(ic => ic.textContent = '+');
+
+    // Then toggle the clicked one
+    if (!isActive) {
+      details.classList.add('active');
+      icon.textContent = '-';
+    }
+  });
+});
+
+// Optional: Close all when clicking outside
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.project-card')) {
+    document.querySelectorAll('.card-details').forEach(detail => detail.classList.remove('active'));
+    document.querySelectorAll('.toggle-icon').forEach(icon => icon.textContent = '+');
+  }
+});
