@@ -63,4 +63,3 @@ function resetAutoSlide() {
 // Initialize
 showSlide(currentIndex);
 startAutoSlide();
-
