@@ -24,6 +24,10 @@ document.querySelectorAll('.menu-item').forEach(item => {
       document.getElementById("greetingContainer").style.display = "block";
       nameInput.value = ""; // Clear the input
     }
+    
+    // Hide the form after submission
+    document.getElementById("nameForm").style.display = "none";
+
   });
 
 
