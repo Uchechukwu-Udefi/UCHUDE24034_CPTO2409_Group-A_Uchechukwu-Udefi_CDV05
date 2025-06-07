@@ -1,3 +1,33 @@
+// Toggle navigation menu on hamburger click
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('navMenu').classList.toggle('show');
+});
+
+// Optional: Close menu when a link is clicked (for better UX)
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.getElementById('navMenu').classList.remove('show');
+  });
+});
+
+// Form functionality
+
+  document.getElementById("nameForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the page from refreshing
+
+    const nameInput = document.getElementById("name");
+    const name = nameInput.value.trim();
+
+    if (name) {
+      document.getElementById("userName").textContent = name;
+      document.getElementById("userName2").textContent = name;
+      document.getElementById("greetingContainer").style.display = "block";
+      nameInput.value = ""; // Clear the input
+    }
+  });
+
+
+// Carousel functionality
 const items = document.querySelectorAll('.carousel-item');
 const indicatorsContainer = document.querySelector('.carousel-indicators');
 const nextBtn = document.querySelector('.carousel-control.next');

@@ -17,12 +17,16 @@
             <h1 class="text-2xl font-bold">UCHECHUKWU HENRY UDEFI</h1>
             <p class="text-lg">Designer & Frontend Developer</p>
         </div>
-        <nav class="menu" style="display: flex; gap: 20px; font-size: 16px;">
-            <div><a href="#home" class="menu-item" style="color: #D2D3D5; background-color: #E41221; border-radius: 5px; text-decoration: none; padding: 5px;">Home</a></div>
-            <div><a href="#about" class="menu-item" style="color: #D2D3D5; background-color: #E41221; border-radius: 5px; text-decoration: none; padding: 5px;">About Me</a></div>
-            <div><a href="#projects" class="menu-item" style="color: #D2D3D5; background-color: #E41221; border-radius: 5px; text-decoration: none; padding: 5px;">Projects</a></div>
-            <div><a href="#contact" class="menu-item" style="color: #D2D3D5; background-color: #E41221; border-radius: 5px; text-decoration: none; padding: 5px;">Contact</a></div>
-        </nav>
+        <div class="nav-wrapper">
+            <button class="hamburger" id="hamburger">&#9776;</button> <!-- ☰ icon -->
+  
+            <nav class="menu" id="navMenu">
+                <a href="#home" class="menu-item">Home</a>
+                <a href="#about" class="menu-item">About Me</a>
+                <a href="#projects" class="menu-item">Projects</a>
+                <a href="#contact" class="menu-item">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main id="home" class="hero-section" style="text-align: center; padding: 20px; background-color: #D2D3D5; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #292458; display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -36,12 +40,29 @@
 
     <section id="about" class="about-section" style="padding: 20px; background-color: #292458; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #D2D3D5; display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 300px; padding: 20px; text-align: left;">
-            <h2 class="text-2xl font-bold">Who I Am</h2>
-            <div>
-                <p>Hi, I'm Uchechukwu Henry Udefi, a frontend developer and designer with a passion for creating beautiful and functional web applications.</p>
-                <hr style="border: 1px solid #D2D3D5; margin: 20px 0;">
-                <p>Over the past years, I've worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I've built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.</p>
+           <h2 class="text-2xl font-bold">Who I Am?</h2>
+
+            <div class="name-prompt" style="display: flex; flex-direction: column; gap: 10px;">
+            <label for="name">But first, can I know your name?</label>
+            <form class="name-form" id="nameForm" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <input type="text" id="name" name="name" placeholder="Name" required />
+                <button type="submit" style="padding: 10px 10px;">Submit</button>
+            </form>
             </div>
+
+            <div class="greeting" style="margin-top: 10px; font-size: 2em; display: none;" id="greetingContainer">
+            <p id="greetingMessage">Hi, <span id="userName"></span>!</p>
+            </div>
+
+            <div>
+            <p>Welcome to my corner, it is so nice to meet you.</p> 
+            <p>I'm Uchechukwu Henry Udefi, a frontend developer and designer with a passion for creating beautiful and functional web applications.</p>
+            <hr style="border: 1px solid #D2D3D5; margin: 20px 0;">
+            <p>
+                Over the past years, I've worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I've built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.
+            </p>
+            </div>
+
             <div style="margin-top: 20px;">
                 <button style="margin-right: 10px; padding: 8px 16px; background-color: #E41221; color: white; border: none; border-radius: 4px;"><a href="#graphic-designs" style="color: white; text-decoration: none;">Designer</a></button>
                 <button style="padding: 8px 16px; background-color: #E41221; color: white; border: none; border-radius: 4px;"><a href="#web-app-development" style="color: white; text-decoration: none;">Developer</a></button>
@@ -211,8 +232,10 @@
     </section>
 
     <section id="contact" class="contact-container" style="padding: 20px; background-color: #D2D3D5; color: #292458; display: flex; flex-direction: column; align-items: center;">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <h2 class="text-2xl font-bold">Contact Me</h2>
+        <p>It is a nice time with you <span id="userName2"></span>.</p>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <p>Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!</p>
 
         <div class="contact-links">
             <!-- Email Link -->
