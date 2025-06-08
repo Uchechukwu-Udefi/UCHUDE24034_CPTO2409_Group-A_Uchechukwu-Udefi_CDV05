@@ -11,8 +11,8 @@
 </head>
 
 <body >
-    <header class="header" style="text-align: center; padding: 20px; background-color: #292458; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #D2D3D5; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000;">
-        <img src="assets\logo-2.png" alt="Profile logo" style="width: 50px; height: 50px; border-radius: 50%;">
+    <header class="header">
+        <img src="assets\logo-2.png" alt="Profile logo" class="w-[50px] h-[50px] rounded-full">
         <div>
             <h1 class="text-2xl font-bold">UCHECHUKWU HENRY UDEFI</h1>
             <p class="text-lg">Designer & Frontend Developer</p>
@@ -29,8 +29,8 @@
         </div>
     </header>
 
-    <main id="home" class="hero-section" style="text-align: center; padding: 20px; background-color: #D2D3D5; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #292458; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <img src="assets\UC2.png" alt="Profile Picture" style="width: 300px; height: 300px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <main id="home" class="hero-section" >
+        <img src="assets\UC2.png" alt="Profile Picture" class="w-[300px] h-[300px] rounded-full mb-5 shadow-md">
         <div>
             <h1 class="text-2xl font-bold">Designer & Frontend Developer</h1>
             <p>With a strong foundation in graphic design and a passion for web development, I bring creativity and technical skills to every project.</p>
@@ -38,14 +38,14 @@
         </div>  
     </main>
 
-    <section id="about" class="about-section" style="padding: 20px; background-color: #292458; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #D2D3D5; display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <section id="about" class="about-section">
         <div style="flex: 1; min-width: 300px; padding: 20px; text-align: left;">
 
             <div class="name-prompt" style="display: flex; flex-direction: column; gap: 10px;">
                 <form class="name-form" id="nameForm" style="display: flex; gap: 10px; margin-bottom: 20px;">
-                    <label for="name">But first, can I know your name?</label>
-                    <input type="text" id="name" name="name" placeholder="Name" style="padding: 5px;" required />
-                    <button type="submit" style="padding: 10px 10px;">Submit</button>
+                    <label for="name">But first, I will be happy to know your name please ☺️</label>
+                    <input type="text" id="name" name="name" placeholder="Name" class="text-black border border-gray-300 p-2 rounded " required />
+                    <button type="submit" class="px-3 py-2 bg-gray-800 text-white rounded">Submit</button>
                 </form>
                 
                 <div class="greeting" style="margin-top: 10px; font-size: 1em; display: none;" id="greetingContainer">
@@ -74,12 +74,12 @@
         </div>
     </section>
 
-    <section class="projects" id="projects" style="padding: 20px; background-color: #D2D3D5; border-bottom: 1px solid #dee2e6; margin-bottom: 20px; color: #292458; display: flex; flex-direction: column; align-items: center;">
-        <div id="project-title" style="width: 100%; max-width: 1200px; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+    <section class="projects w-full flex flex-col items-center p-6"" id="projects" >
+        <div id="project-title" class="w-full max-w-[1200px] flex flex-col items-center p-5">
             <h2 class="text-2xl font-bold">My Projects</h2>
             <p>Here are some of the projects I've worked on:</p>
         </div>
-        <div id="graphic-designs" style="width: 100%; max-width: 1200px; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+        <div id="graphic-designs" class="w-full max-w-[1200px] flex flex-col items-center p-5">
             <h3 class="text-xl font-bold">Graphic Designs</h3>
             <p>I created visually appealing designs for various clients, functions while focusing on branding and user experience.</p>
     
@@ -133,20 +133,20 @@
                 <div class="carousel-indicators"></div>
             </div>
 
-             <div class="graphic-designs" style="width: 100%; max-width: 1200px; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+             <div class="w-full max-w-[1200px] flex flex-col items-center p-5">
                 <h4 class="text-lg font-bold">Tools & Technologies:</h4>
                 <p><ul class="list-disc list-inside"><li>Adobe Photoshop</li><li>CorelDRAW</li><li>Pen & Paper</li></ul></p>
             </div>
         </div>
 
-        <hr style="border: 1px solid #F8F9FA; margin: 20px 0; width: 100%;">
+        <hr class="border border-gray-100 my-5 w-full">
 
-        <div id="web-app-development" class="web-app-development" style="width: 100%; max-width: 1200px; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+        <div id="web-app-development" class="web-app-development w-full max-w-[1200px] p-5 flex flex-col items-center">
             <h3 class="text-xl font-bold">Web & App Development</h3>
             <p>I developed responsive web applications and mobile apps, ensuring a seamless user experience across devices.</p>
-           
-            <div class="projects-list " style="gap: 50px; padding: 20px; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 1200px;">
-  
+
+            <div class="projects-list flex flex-col items-center gap-12 p-5 w-full max-w-[1200px]">
+
                <div class="cards-container">
                     <!-- Project Cards -->
                     <div class="project-card" data-card="1">
@@ -174,7 +174,7 @@
                         <img src="assets/web-dev/task-management-edit.jpg" alt="Task App Screenshot" class="project-image">
                         <p><strong>Description:</strong> A collaborative tool for teams to organize and track tasks.</p>
                         <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Firebase</p>
-                        <p><strong>Status:</strong> Completed</p>
+                        <p><strong>Status:</strong> In Progress</p>
                         <a href="https://github.com/Uchechukwu-Udefi/..." class="project-link">View Project</a>
                         </div>
                     </div>
@@ -232,7 +232,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact-container" style="padding: 20px; background-color: #D2D3D5; color: #292458; display: flex; flex-direction: column; align-items: center;">
+    <section id="contact" class="contact-container" >
         <h2 class="text-2xl font-bold">Contact Me</h2>
         <p>It is a nice time with you <span id="userName2"></span>.</p>
         <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
@@ -259,7 +259,7 @@
         </div>
     </section>
 
-    <footer class="footer" style="text-align: center; padding: 20px; background-color: #292458; color: #D2D3D5; border-top: 1px solid #dee2e6; margin-top: 20px;">
+    <footer class="footer" >
         <p><span style="color:#E41221">Designed by:</span> Uchechukwu Henry Udefi &copy; 2025</p>
     </footer>
 </body>
