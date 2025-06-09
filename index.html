@@ -51,7 +51,7 @@
                 <form id="nameForm" class="name-form flex flex-wrap gap-3 mb-5">
                     <label for="name" class="text-base font-medium">But first, I will be happy to know your name please ☺️</label>
                     <input type="text" id="name" name="name" placeholder="Name" class="flex-1 min-w-[150px] text-black border border-gray-300 p-2 rounded" required />
-                    <button type="submit" class="px-3 py-2 bg-gray-800 text-white rounded">Submit</button>
+                    <button type="submit" class="px-3 py-2 bg-gray-800 text-white rounded hover:-translate-y-1 transition-transform duration-300 ease-in-out bg-gray-600 shadow-[0_4px_20px_rgba(0,0,0,0.15)]">Submit</button>
                 </form>
                 
                 <div class="greeting mt-5 text-base hidden" id="greetingContainer">
@@ -72,8 +72,8 @@
             </div>
 
             <div class="mt-5">
-                <button class="inline-block mr-2 px-4 py-2 bg-[#E41221] text-white rounded hover:opacity-90 transition"><a href="#graphic-designs" style="color: white; text-decoration: none;">Designer</a></button>
-                <button class="inline-block mr-2 px-4 py-2 bg-[#E41221] text-white rounded hover:opacity-90 transition"><a href="#web-app-development" style="color: white; text-decoration: none;">Developer</a></button>
+                <button class="inline-block mr-2 px-4 py-2 bg-[#E41221] text-white rounded hover:-translate-y-1 transition-transform duration-300 ease-in-out shadow-[0_4px_20px_rgba(0,0,0,0.15)]"><a href="#graphic-designs" style="color: white; text-decoration: none;">Designer</a></button>
+                <button class="inline-block mr-2 px-4 py-2 bg-[#E41221] text-white rounded hover:-translate-y-1 transition-transform duration-300 ease-in-out shadow-[0_4px_20px_rgba(0,0,0,0.15)]"><a href="#web-app-development" style="color: white; text-decoration: none;">Developer</a></button>
             </div>
         </div>
 
@@ -149,8 +149,20 @@
             </div>
 
             <div class="w-full max-w-[1200px] flex flex-col items-center p-5">
-                <h4 class="text-lg font-bold">Tools & Technologies:</h4>
-                <p><ul class="list-disc list-inside"><li>Adobe Photoshop</li><li>CorelDRAW</li><li>Pen & Paper</li></ul></p>
+                <div class="w-full max-w-[1200px] flex flex-col items-center p-5">
+                    <h4 class="text-lg font-bold mb-3">Design Tools:</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-image text-pink-500"></i> Adobe Photoshop
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-vector-square text-green-600"></i> CorelDRAW
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-pencil-alt text-gray-600"></i> Pen & Paper
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -245,8 +257,27 @@
             </div>
 
             <div class="tools-technologies" style="width: 100%; max-width: 1200px; padding: 20px; display: flex; flex-direction: column; align-items: center;">
-                <h4 class="text-lg font-bold">Tools & Technologies:</h4>
-                <p><ul class="list-disc list-inside"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>Git & GitHub</li></ul></p>
+                <h4 class="text-lg font-bold mb-3">Development Tools & Technologies:</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-html5 text-orange-500"></i> HTML
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-css3-alt text-blue-500"></i> CSS
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-js text-yellow-400"></i> JavaScript
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-react text-blue-400"></i> React
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-node-js text-green-500"></i> Node.js
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-github text-gray-800"></i> Git & GitHub
+                    </li>
+                </ul>
             </div>
 
         </div>

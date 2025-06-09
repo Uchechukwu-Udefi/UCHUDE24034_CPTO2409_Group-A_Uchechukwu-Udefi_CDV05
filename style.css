@@ -118,7 +118,15 @@ header.header {
   background-color: #E41221;
   border-radius: 5px;
   text-decoration: none;
-  padding: 5px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #ec2835;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Hamburger button hidden on large screens */
@@ -254,6 +262,12 @@ header.header {
     overflow: hidden;
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
 .card-header {
     padding: 15px 20px;
     display: flex;
@@ -262,11 +276,14 @@ header.header {
     cursor: pointer;
     background-color: #292458;
     color: white;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    
 }
 
 .card-header:hover {
     background-color: #3f3977;
+    transform: scale(1.01);
+    
 }
 
 .card-header h3 {
