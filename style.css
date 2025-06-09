@@ -317,3 +317,67 @@ header.header {
     border-radius: 50%;
     margin-right: 15px;
 }
+
+/******************* Contact section *****************/
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-link i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.contact-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Platform-Specific Styling */
+.contact-link.email {
+    color: #d93025;
+}
+
+.contact-link.linkedin {
+    color: #0077b5;
+}
+
+.contact-link.github {
+    color: #000000;
+}

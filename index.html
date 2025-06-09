@@ -46,30 +46,29 @@
         <div style="flex: 1; min-width: 300px; padding: 20px; text-align: left;">
 
             <!-- Name Prompt and greetings -->
-            <div class="name-prompt" style="display: flex; flex-direction: column; gap: 10px;">
+            <div class="name-prompt flex flex-col gap-3 max-w-full">
 
-                <form class="name-form" id="nameForm" style="display: flex; gap: 10px; margin-bottom: 20px;">
-                    <label for="name">But first, I will be happy to know your name please ☺️</label>
-                    <input type="text" id="name" name="name" placeholder="Name" class="text-black border border-gray-300 p-2 rounded " required />
+                <form id="nameForm" class="name-form flex flex-wrap gap-3 mb-5">
+                    <label for="name" class="text-base font-medium">But first, I will be happy to know your name please ☺️</label>
+                    <input type="text" id="name" name="name" placeholder="Name" class="flex-1 min-w-[150px] text-black border border-gray-300 p-2 rounded" required />
                     <button type="submit" class="px-3 py-2 bg-gray-800 text-white rounded">Submit</button>
                 </form>
                 
-                <div class="greeting" style="margin-top: 10px; font-size: 1em; display: none;" id="greetingContainer">
+                <div class="greeting" style="margin-top: 20px; font-size: 1em; display: none;" id="greetingContainer">
                 <p id="greetingMessage">Hi, <span id="userName"></span>! Welcome to my corner, it is so nice to meet you.</p>
                 </div>
 
             </div>
 
             <div style="margin-top: 20px;">
+
                 <h2 class="text-2xl font-bold">About Me</h2>
-                
                 <p>I'm Uchechukwu Henry Udefi, a frontend developer and designer with a passion for creating beautiful and functional web applications.</p>
                 
                 <hr style="border: 1px solid #D2D3D5; margin: 20px 0;">
                 
-                <p>
-                    Over the past years, I've worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I've built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.
-                </p>
+                <p>Over the past years, I've worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I've built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.</p>
+            
             </div>
 
             <div style="margin-top: 20px;">
@@ -291,6 +290,6 @@
         <p><span style="color:#E41221">Designed by:</span> Uchechukwu Henry Udefi &copy; 2025</p>
 
     </footer>
-    
+
 </body>
 </html
