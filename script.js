@@ -1,14 +1,24 @@
-// Toggle navigation menu on hamburger click
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('navMenu').classList.toggle('show');
-});
-
-// Optional: Close menu when a link is clicked (for better UX)
-document.querySelectorAll('.menu-item').forEach(item => {
-  item.addEventListener('click', () => {
-    document.getElementById('navMenu').classList.remove('show');
+// Hamburger menu functionality
+  // Toggle navigation menu on hamburger click
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navMenu').classList.toggle('show');
   });
-});
+
+  // Optional: Close menu when a link is clicked (for better UX)
+  document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', () => {
+      document.getElementById('navMenu').classList.remove('show');
+    });
+  });
+
+  // Close menu when clicking outside of it
+  document.addEventListener('click', (event) => {
+    const navMenu = document.getElementById('navMenu');
+    if (!navMenu.contains(event.target) && !document.getElementById('hamburger').contains(event.target)) {
+      navMenu.classList.remove('show');
+    }
+  });
+  
 
 // Form functionality
 
@@ -24,7 +34,7 @@ document.querySelectorAll('.menu-item').forEach(item => {
       document.getElementById("greetingContainer").style.display = "block";
       nameInput.value = ""; // Clear the input
     }
-    
+
     // Hide the form after submission
     document.getElementById("nameForm").style.display = "none";
 

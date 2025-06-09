@@ -325,7 +325,8 @@ header.header {
     width: 100%;
     margin: 0 auto;
     padding: 3rem 1rem;
-    background-color: #f9f9f9;
+    color: #ffffff;
+    background-color: #292458;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
