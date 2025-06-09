@@ -41,9 +41,9 @@
     </main>
 
     <!-- About section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section flex flex-wrap">
 
-        <div style="flex: 1; min-width: 300px; padding: 20px; text-align: left;">
+        <div class="flex-1 min-w-[300px] p-5 text-left">
 
             <!-- Name Prompt and greetings -->
             <div class="name-prompt flex flex-col gap-3 max-w-full">
@@ -54,31 +54,31 @@
                     <button type="submit" class="px-3 py-2 bg-gray-800 text-white rounded">Submit</button>
                 </form>
                 
-                <div class="greeting" style="margin-top: 20px; font-size: 1em; display: none;" id="greetingContainer">
+                <div class="greeting mt-5 text-base hidden" id="greetingContainer">
                 <p id="greetingMessage">Hi, <span id="userName"></span>! Welcome to my corner, it is so nice to meet you.</p>
                 </div>
 
             </div>
 
-            <div style="margin-top: 20px;">
+            <div class="mt-5">
 
-                <h2 class="text-2xl font-bold">About Me</h2>
+                <h2 class="text-2xl font-bold py-5">About Me</h2>
                 <p>I'm Uchechukwu Henry Udefi, a frontend developer and designer with a passion for creating beautiful and functional web applications.</p>
                 
-                <hr style="border: 1px solid #D2D3D5; margin: 20px 0;">
+                <hr class="border-t border-[#D2D3D5] my-5" />
                 
                 <p>Over the past years, I've worked as a graphic designer and dedicated myself to learning web development after making a career change. I started with HTML and CSS, and have since developed a strong proficiency in JavaScript and React. Through hands-on projects and consistent practice, I've built a solid foundation in front-end development and I'm eager to bring my skills and adaptability to a professional team environment.</p>
             
             </div>
 
-            <div style="margin-top: 20px;">
-                <button style="margin-right: 10px; padding: 8px 16px; background-color: #E41221; color: white; border: none; border-radius: 4px;"><a href="#graphic-designs" style="color: white; text-decoration: none;">Designer</a></button>
-                <button style="padding: 8px 16px; background-color: #E41221; color: white; border: none; border-radius: 4px;"><a href="#web-app-development" style="color: white; text-decoration: none;">Developer</a></button>
+            <div class="mt-5">
+                <button class="inline-block mr-2 px-4 py-2 bg-[#E41221] text-white rounded hover:opacity-90 transition"><a href="#graphic-designs" style="color: white; text-decoration: none;">Designer</a></button>
+                <button class="inline-block mr-2 px-4 py-2 bg-[#E41221] text-white rounded hover:opacity-90 transition"><a href="#web-app-development" style="color: white; text-decoration: none;">Developer</a></button>
             </div>
         </div>
 
-        <div style="flex: 1; min-width: 300px; display: flex; justify-content: center; padding: 20px;">
-            <img src="assets\uc3.jpg" alt="Profile Picture" style="width: 250px; height: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="flex-1 min-w-[300px] flex justify-center items-center p-5">
+            <img src="assets/uc3.jpg" alt="Profile Picture" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
         </div>
 
     </section>
@@ -87,13 +87,13 @@
     <section class="projects w-full flex flex-col items-center p-6" id="projects">
 
         <div id="project-title" class="w-full max-w-[1200px] flex flex-col items-center p-5">
-            <h2 class="text-2xl font-bold">My Projects</h2>
+            <h2 class="text-2xl font-bold py-5">My Projects</h2>
             <p>Here are some of the projects I've worked on:</p>
         </div>
 
         <!-- Graphics section -->
         <div id="graphic-designs" class="w-full max-w-[1200px] flex flex-col items-center p-5">
-            <h3 class="text-xl font-bold">Graphic Designs</h3>
+            <h3 class="text-xl font-bold py-3">Graphic Designs</h3>
             <p>I created visually appealing designs for various clients, functions while focusing on branding and user experience.</p>
     
             <!-- Project carousel -->
@@ -160,7 +160,7 @@
         <!-- Web section -->
         <div id="web-app-development" class="web-app-development w-full max-w-[1200px] p-5 flex flex-col items-center">
            
-            <h3 class="text-xl font-bold">Web & App Development</h3>
+            <h3 class="text-xl font-bold py-3">Web & App Development</h3>
             <p>I developed responsive web applications and mobile apps, ensuring a seamless user experience across devices.</p>
 
             <div class="projects-list flex flex-col items-center gap-12 p-5 w-full max-w-[1200px]">
@@ -256,7 +256,7 @@
     <!-- Contact section -->
     <section id="contact" class="contact-container" >
 
-        <h2 class="text-2xl font-bold">Contact Me</h2>
+        <h2 class="text-2xl font-bold py-5">Contact Me</h2>
         <p>It is a nice time with you <span id="userName2"></span>.</p>
         <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
         <p>Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!</p>
